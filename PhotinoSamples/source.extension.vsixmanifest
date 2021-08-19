@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="PhotinoSamples.EB95238F-5D94-41A2-A9D7-5F1A46D4654A" Version="1.1.0" Language="en-US" Publisher="TryPhotino" />
+        <Identity Id="PhotinoSamples.EB95238F-5D94-41A2-A9D7-5F1A46D4654A" Version="2.0.0" Language="en-US" Publisher="TryPhotino" />
         <DisplayName>Photino Samples Project Templates</DisplayName>
         <Description xml:space="preserve">Installs project templates to Visual Studio 2019 to create Photino Sample applications. These templates can be used to start new Photino applications with the desired feature set. VS Code project templates are available separately.</Description>
         <MoreInfo>https://tryphotino.io</MoreInfo>
         <License>Apache2.0License.txt</License>
-        <GettingStartedGuide>https://tryphotino.kavadocs.com/Quick-Start-for-.NET-Developers</GettingStartedGuide>
+        <GettingStartedGuide>https://docs.tryphotino.io/Quick-Start-for-.NET-Developers</GettingStartedGuide>
         <ReleaseNotes>ReleaseNotes.txt</ReleaseNotes>
         <Icon>photino-vsext-icon.png</Icon>
         <PreviewImage>photino-vsext-icon.png</PreviewImage>
-        <Tags>Photino Blazor HTML Desktop</Tags>
-        <Preview>true</Preview>
+        <Tags>Photino HTML Desktop</Tags>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />
@@ -23,10 +22,13 @@
     </Prerequisites>
     <Assets>
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\HelloPhotino.Angular.zip" />
-        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\HelloPhotino.Blazor.zip" />
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\HelloPhotino.GRpc.zip" />
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\HelloPhotino.NET.zip" />
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\HelloPhotino.React.zip" />
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\HelloPhotino.Vue.zip" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\HelloPhotino.3d.zip" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\HelloPhotino.3d.React.zip" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\HelloPhotino.MultiWindow.zip" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\HelloPhotino.TestBench.zip" />
     </Assets>
 </PackageManifest>

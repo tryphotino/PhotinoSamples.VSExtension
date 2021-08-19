@@ -1,4 +1,8 @@
-﻿2021-03-11 - 1.1.0
+﻿2021-08-19 - 2.0.0
+	Update to Photino V2
+	Dropped Blazor sample. Added 3d, 3d.React, MultiWindow, and TestBench samples.
+
+2021-03-11 - 1.1.0
 	Update to the newest Photino for .NET version with fluent API.
 
 2021-02-06 - 0.9 
