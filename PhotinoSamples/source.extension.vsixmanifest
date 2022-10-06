@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="PhotinoSamples.EB95238F-5D94-41A2-A9D7-5F1A46D4654A" Version="2.3.0" Language="en-US" Publisher="TryPhotino" />
+        <Identity Id="PhotinoSamples.EB95238F-5D94-41A2-A9D7-5F1A46D4654A" Version="2.3.1" Language="en-US" Publisher="TryPhotino" />
         <DisplayName>Photino Samples Project Templates</DisplayName>
         <Description xml:space="preserve">Installs project templates to Visual Studio 2019 &amp; 2022 to create Photino Sample applications. These templates can be used to start new Photino applications with the desired feature set. VS Code project templates are available separately.</Description>
         <MoreInfo>https://tryphotino.io</MoreInfo>
@@ -12,10 +12,25 @@
         <PreviewImage>photino-vsext-icon.png</PreviewImage>
         <Tags>Photino HTML Desktop</Tags>
     </Metadata>
-    <Installation>
-        <InstallationTarget Version="[16.0,18.0)" Id="Microsoft.VisualStudio.Community" />
-        <InstallationTarget Version="[16.0,18.0)" Id="Microsoft.VisualStudio.Enterprise" />
-        <InstallationTarget Version="[16.0,18.0)" Id="Microsoft.VisualStudio.Pro" />
+    <Installation InstalledByMsi="true" AllUsers="true">
+        <InstallationTarget Version="[16.0,17.0)" Id="Microsoft.VisualStudio.Community">
+            <ProductArchitecture>x86</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Community">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[16.0,17.0)" Id="Microsoft.VisualStudio.Pro">
+            <ProductArchitecture>x86</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Pro">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[16.0,17.0)" Id="Microsoft.VisualStudio.Enterprise">
+            <ProductArchitecture>x86</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Enterprise">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
     </Installation>
     <Prerequisites>
         <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,18.0)" DisplayName="Visual Studio core editor" />
